@@ -1,0 +1,41 @@
+{
+  "name": "translator-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manderdeveloper/translator-graphql.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manderdeveloper/translator-graphql/issues"
+  },
+  "homepage": "https://github.com/manderdeveloper/translator-graphql#readme",
+  "dependencies": {
+    "@graphql-tools/load-files": "^7.0.0",
+    "@graphql-tools/merge": "^9.0.0",
+    "@types/express": "^4.17.17",
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^20.5.9",
+    "@types/uuid": "^9.0.3",
+    "apollo-server": "^3.12.1",
+    "cross-fetch": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.8.0",
+    "graphql-tools": "^9.0.0",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

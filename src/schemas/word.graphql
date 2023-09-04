@@ -1,0 +1,31 @@
+type Query {
+  getWord(id: ID!): Word
+  getAllWords: [Word]
+}
+
+type Mutation {
+  createWord(input: WordInput!): Word
+  updateWord(id: ID!, input: WordInput!): Word
+  deleteWord(id: ID!): Word
+  translatedText(text: String!, language: String!): TranslationResult!
+}
+
+input WordInput {
+  text: String!
+  translation: String!
+}
+
+type Word {
+  id: ID!
+  text: String!
+  translation: String!
+}
+
+type TranslationInput {
+  text: String!
+  language: String!
+}
+
+type TranslationResult {
+  translation: String!
+}
